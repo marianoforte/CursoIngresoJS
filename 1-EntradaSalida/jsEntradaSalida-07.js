@@ -53,6 +53,11 @@ function dividir()
 	
   	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+
+	if(num2="0")
+	{
+		alert("No se puede dividir por 0");
+	}
 	
   	resultado = num1/num2;
 	

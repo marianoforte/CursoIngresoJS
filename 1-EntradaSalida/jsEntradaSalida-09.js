@@ -10,14 +10,14 @@ function mostrarAumento()
 	let resultado;
 
 	//transformo el numero a entero
-	sueldo = parseInt(document.getElementById("txtIdSueldo").value);
+	sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
 
-	resultado = sueldo * 10 / 100;
+	//saco el porcentaje
+	resultado = sueldo * 0.1;
 
-	if(sueldo = "")
-	{
-		resultado = "";
-	}
+	//lo sumo a la variable sueldo y lo asigno al resultado
+	resultado = sueldo + resultado
 
-	document.getElementById("txtIdResultado").value = resultado;
+	//muestro el resultado en la caja de texto y asigno la cantidad de decimales máximos
+	document.getElementById("txtIdResultado").value = resultado.toFixed(2);
 }
