@@ -56,7 +56,7 @@ function dividir()
 
 	if(num2="0")
 	{
-		alert("No se puede dividir por 0");
+		alert("No es posible dividir por 0");
 	}
 	
   	resultado = num1/num2;
