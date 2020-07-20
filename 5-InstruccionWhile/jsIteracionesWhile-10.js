@@ -47,6 +47,7 @@ function mostrar()
       array[5]++;
       }
 
+
 	  if (numbers % 2 == 0)
 	  {
         array [3]++;
