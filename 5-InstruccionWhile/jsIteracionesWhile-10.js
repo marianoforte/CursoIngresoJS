@@ -13,12 +13,11 @@ hasta que el usuario quiera, mostrar:
 
 function mostrar()
 {
-	let array = ["sumaPositivos", "sumaNegativos", "ceros", "numerosPares", "promedioPositivos", "promedioNegativos", "diferenciaPosNeg"];
+	let array = ["sumaPositivos", "sumaNegativos", "ceros", "numerosPares", "promedioPositivos", "promedioNegativos"];
 	let numeros;
 	let respuesta;
 
 	respuesta = "si";
-
 	numeros = 1;
 	numerosPares = 0
 	array [0] = 0; //sumaPositivos
@@ -27,50 +26,51 @@ function mostrar()
 	array [3] = 0; //numerosPares
 	array [4] = 0; //promedioPositivos
 	array [5] = 0; //promedioNegativos
-	array [6] = 0; //diferenciaPosNeg
 
 	while(respuesta != "no")
-	{
-		numeros++;
-		numeros = parseFloat(prompt("Ingrese un número"));
-		respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
+   {
+	  numeros = parseFloat(prompt("Ingrese un número"));
+	  respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
+      
+      if (numeros == 0)
+      {
+      array[2]++;
+      }
+      else if(numeros >=0)
+      {
+      array[0] = array[ 0] + numeros;
+      array[4]++;
+      }
+      else
+      {
+      array[1] = array[1] + numeros;
+      array[5]++;
+      }
 
-		if(numeros >=0)
-		{
-		array[0] = array [0] + numeros;
-		array [4] = array [4] + numeros;
-		}
-		else
-		{
-		array [1] = array [1] + numeros;
-		array [5] = array [5] + numeros;
-		}
-		/*
-		if (numbers % 2 == 0) {
-			return array [3];
-		}
-		else
-		{}
-		*/
+	  if (numbers % 2 == 0)
+	  {
+        array [3]++;
+	  }
+   }
 
-		array [6] = array[0] - array [1];
-	}	
-
-	document.write("<h1>Resultados:</h1>");
-	document.write("<br>");
-	document.write("La suma de los números positivos es :" + array[0]);
-	document.write("<br>");
-	document.write("La diferencia entre los números negativos es: " + array [1]);
-	document.write("<br>");
-	document.write("Hay " + array [2] + " ceros.");
-	document.write("<br>");
-	document.write("La cantidad de números pares es: " + array [3]);
-	document.write("<br>");
-	document.write("El promedio entre los números positivos es: " + array [4] / numeros);
-	document.write("<br>");
-	document.write("El promedio entre los números negativos es: " + array [5] / numeros);
-	document.write("<br>");
-	document.write("La diferencia entre números positivos y negativos es: " + array [6]);
-
+		document.write("<h1>Resultados:</h1>");
+		document.write("<br>");
+		document.write("La suma de los números negativos es :" + array[1]);
+		document.write("<br>");
+		document.write("La suma de los números positivos es :" + array[0]);
+		document.write("<br>");
+		document.write("Cantidad de números positivos :" + array[4]);
+		document.write("<br>");
+		document.write("Cantidad de números negativos :" + array[5]);
+		document.write("<br>");
+		document.write("Hay " + array [2] + " ceros.");
+		document.write("<br>");
+		document.write("La cantidad de números pares es: " + array [3]);
+		document.write("<br>");
+		document.write("El promedio entre los números positivos es: " + (array[0] / array[4]));
+		document.write("<br>");
+		document.write("El promedio entre los números negativos es: " + (array[1] / array[5]));
+		document.write("<br>");
+		document.write("La diferencia entre números positivos y negativos es: " + (array[0] - array[1]));
 }
 //FIN DE LA FUNCIÓN
