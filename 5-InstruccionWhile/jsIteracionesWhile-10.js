@@ -46,7 +46,7 @@ function mostrar()
 		array [5] = array [5] + numeros;
 		}
 		/*
-		if (numbers % 2 == 0) {
+		if (numeros % 2 == 0) {
 			return array [3];
 		}
 		else
