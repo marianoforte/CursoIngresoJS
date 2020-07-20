@@ -6,18 +6,15 @@ function mostrar()
 
 	numero = Math.round(Math.random()*(11-1)+parseInt(1));
 
-	if (numero >= "9")
-	{
+	if (numero >= "9"){
 		alert(numero + ": Excelente");
 	}
 	
-	if (numero >= "4" && numero < "9")
-	{
+	else if (numero >= "4" && numero < "9"){
 		alert(numero + ": Aprobado");
 	}
 
-	if (numero < "4")
-	{
+	else{
 		alert(numero + ": Vamos, la proxima se puede");
 	}
 

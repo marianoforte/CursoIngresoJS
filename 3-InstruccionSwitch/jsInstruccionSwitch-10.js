@@ -3,8 +3,7 @@ function mostrar()
 	let estacionIngresada = document.getElementById("txtIdEstacion").value;
 	let destinoIngresado = document.getElementById("txtIdDestino").value;
 
-	if((estacionIngresada == "Invierno"))
-	{
+	if((estacionIngresada == "Invierno")){
 		switch(destinoIngresado)
 		{
 			case "Bariloche":
@@ -22,8 +21,7 @@ function mostrar()
 		}
 	}
 
-	else if((estacionIngresada == "Verano"))
-	{
+	else if((estacionIngresada == "Verano")){
 		switch(destinoIngresado)
 		{
 			case "Cataratas":
@@ -41,8 +39,7 @@ function mostrar()
 		}
 	}
 
-	else if((destinoIngresado == "Otoño"))
-	{
+	else if((destinoIngresado == "Otoño")){
 		switch(destinoIngresado)
 		{
 			case "Bariloche":
@@ -56,8 +53,7 @@ function mostrar()
 		}
 	}
 
-	else
-	{
+	else{
 		switch(destinoIngresado)
 		{
 			case "Cataratas":

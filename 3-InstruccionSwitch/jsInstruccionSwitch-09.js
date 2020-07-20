@@ -8,8 +8,7 @@ function mostrar()
 
 	precioBase = parseInt(precioBase);
 
-	if(estacionIngresada == "Invierno")
-	{
+	if(estacionIngresada == "Invierno"){
 		switch(destinoIngresado)
 		{
 			case "Bariloche":
@@ -44,8 +43,7 @@ function mostrar()
 		}
 	}
 	
-	else if(estacionIngresada == "Verano")
-	{
+	else if(estacionIngresada == "Verano"){
 		switch(destinoIngresado)
 		{
 			case "Bariloche":
@@ -80,8 +78,7 @@ function mostrar()
 		}
 	}
 
-	else
-	{
+	else{
 		switch(destinoIngresado)
 		{
 			case "Bariloche":
