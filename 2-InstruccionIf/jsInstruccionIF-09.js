@@ -8,11 +8,4 @@ function mostrar()
 
 	alert("El número es: " + numero);
 
-
-/*
-	let numero = Math.round(Math.random()*10);
-
-	alert("El número es: " + numero);	
-*/
-
 }//FIN DE LA FUNCIÓN
