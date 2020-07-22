@@ -4,7 +4,7 @@ function mostrar()
 
 	let numero;
 
-	numero = Math.round(Math.random()*(11-1)+parseInt(1));
+	numero = Math.round(Math.random() * 9 + parseInt(1));
 
 	if (numero >= "9"){
 		alert(numero + ": Excelente");

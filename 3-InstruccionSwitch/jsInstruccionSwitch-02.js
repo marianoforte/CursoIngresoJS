@@ -5,12 +5,6 @@ function mostrar()
 
 	switch(mesDelAño)
 	{
-		case "Julio":
-		case "Agosto":
-			{
-				alert("Abrigate que hace frío.");
-				break;
-			}
 		case "Enero":
 		case "Febrero":
 		case "Marzo":
@@ -19,6 +13,12 @@ function mostrar()
 		case "Junio":
 			{
 				alert("Falta para el invierno.");
+				break;
+			}
+		case "Julio":
+		case "Agosto":
+			{
+				alert("Abrigate que hace frío.");
 				break;
 			}
 		case "Septiembre":
