@@ -20,11 +20,11 @@ function mostrar()
 
 		if(numero>=0)
 		{
-			sumaPositivos = sumaPositivos + numero;
+			sumaPositivos += numero;
 		}
 		if(numero<0)
 		{
-			multiplicacionNegativos = multiplicacionNegativos * numero;
+			multiplicacionNegativos *= numero;
 		}
 	}
 

@@ -9,7 +9,7 @@ function mostrar()
 	while(contador>0)
 	{
 		alert("Número: " + contador);
-		contador = contador - 1;
+		contador = contador--;
 	}
 
 }//FIN DE LA FUNCIÓN

@@ -13,7 +13,7 @@ function mostrar()
 		numeroIngresado = prompt("Ingrese 5 números distintos");
 		numeroIngresado = parseFloat(numeroIngresado);
 		acumulador = acumulador + numeroIngresado;
-		contador = contador + 1
+		contador = contador++;
 	}
 	
 	

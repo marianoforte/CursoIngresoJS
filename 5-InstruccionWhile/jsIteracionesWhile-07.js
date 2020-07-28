@@ -17,7 +17,7 @@ function mostrar()
 		contador++;
 		contador = parseFloat(prompt("Ingrese un número"));
 		respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
-		acumulador = acumulador + contador;
+		acumulador += contador;
 	}
 
 
