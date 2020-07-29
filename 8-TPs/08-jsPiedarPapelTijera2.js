@@ -9,7 +9,7 @@ function comenzar()
 	 	
 	eleccionMaquina = Math.round(Math.random() * 2 + 1);
 
-}//FIN DE LA FUNCIÓN
+}
 function piedra()
 {
 	if(eleccionMaquina == 1){
@@ -31,7 +31,7 @@ function piedra()
 	document.getElementById("txtIdPerdidas").value = ContadorDeGanadas;
 	document.getElementById("txtIdEmpatadas").value = ContadorDePerdidas;
 
-}//FIN DE LA FUNCIÓN
+}
 function papel()
 {
 	if(eleccionMaquina == 1){
@@ -53,7 +53,7 @@ function papel()
 	document.getElementById("txtIdPerdidas").value = ContadorDeGanadas;
 	document.getElementById("txtIdEmpatadas").value = ContadorDePerdidas;
 	
-}//FIN DE LA FUNCIÓN
+}
 function tijera()
 {
 	if(eleccionMaquina == 1){
@@ -75,7 +75,7 @@ function tijera()
 	document.getElementById("txtIdPerdidas").value = ContadorDeGanadas;
 	document.getElementById("txtIdEmpatadas").value = ContadorDePerdidas;
 	
-}//FIN DE LA FUNCIÓN
+}
 
 function mostrarResultado()
 {
