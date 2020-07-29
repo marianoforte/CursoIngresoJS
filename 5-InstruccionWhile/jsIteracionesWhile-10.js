@@ -17,7 +17,7 @@ function mostrar() {
 	let numeros
 	let respuesta;
 
-	numeros = 1;
+	numeros = 0;
 	numerosPares = 0
 	array [0] = 0; //sumaPositivos
 	array [1] = 0; //sumaNegativos
@@ -28,7 +28,7 @@ function mostrar() {
 
 	respuesta = "si";
 
-	while(respuesta != "no"){
+	do{
   numeros = parseFloat(prompt("Ingrese un número"));
   respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
 
@@ -46,7 +46,7 @@ function mostrar() {
   if (numeros % 2 == 0){
 	 array[3]++;
   }
-}   
+}while(respuesta != "no");
 
 document.write("<h1>Resultados:</h1>");
 document.write("<br>");

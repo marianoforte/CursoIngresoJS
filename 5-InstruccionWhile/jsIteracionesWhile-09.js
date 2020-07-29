@@ -9,7 +9,7 @@ function mostrar()
 	let respuesta ='si';
 	let numero;
    
-   while(respuesta!='no'){
+   do{
       contador++;
       numero = parseInt(prompt("Ingrese un número"));
 	  respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
@@ -24,8 +24,9 @@ function mostrar()
 	  if (contador > 1 && numero < minimo){
 		  minimo = numero;
 		}
-   }
-      document.getElementById("txtIdMaximo").value = maximo;
-      document.getElementById("txtIdMinimo").value = minimo;
+   }while(respuesta != "no");
+   
+    document.getElementById("txtIdMaximo").value = maximo;
+    document.getElementById("txtIdMinimo").value = minimo;
 }
 //FIN DE LA FUNCIÓN

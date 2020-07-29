@@ -6,14 +6,14 @@ function mostrar()
 {
 	let acumulador = 0;
 	let contador = 0;
-	let respuesta = "si";
+	let respuesta;
 
-	while(respuesta != "no"){
+	do{
 		contador++;
-		acumulador = parseInt(prompt("Ingrese un número"));
+		acumulador += parseInt(prompt("Ingrese un número"));
 		respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
-		acumulador += acumulador;
-	}
+	}while(respuesta != "no");
+
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / contador;
 }//FIN DE LA FUNCIÓN
