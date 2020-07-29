@@ -9,7 +9,6 @@ function mostrar()
 	while(numeroIngresado >= 0 && numeroIngresado <=9)
 	{
 		document.getElementById("txtIdNumero").value = numeroIngresado
-		break;
 	}
 	
 }//FIN DE LA FUNCIÓN

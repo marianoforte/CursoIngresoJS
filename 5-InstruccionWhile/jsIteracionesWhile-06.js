@@ -1,22 +1,14 @@
 function mostrar()
 {
-	let contador;
-	let acumulador;
+	let contador = 1;
+	let acumulador = 0;
 	let numeroIngresado;
 
-	contador=1;
-	acumulador=0;
-	
-	while(contador<=5)
-	{
-		
-		numeroIngresado = prompt("Ingrese 5 números distintos");
-		numeroIngresado = parseFloat(numeroIngresado);
-		acumulador = acumulador + numeroIngresado;
-		contador = contador++;
+	while(contador<=5){
+		numeroIngresado = parseFloat(prompt("Ingrese 5 números distintos"));
+		acumulador += numeroIngresado;
+		contador++;
 	}
-	
-	
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / 5;
 }//FIN DE LA FUNCIÓN

@@ -13,21 +13,16 @@ function mostrar()
 	multiplicacionNegativos = 1;
 	respuesta = "si";
 
-	while(respuesta != "no")
-	{
+	while(respuesta != "no"){
 		numero = parseFloat(prompt("Ingrese un numero positivo o negativo"));
 		respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
-
-		if(numero>=0)
-		{
+		if(numero>=0){
 			sumaPositivos += numero;
 		}
-		if(numero<0)
-		{
+		if(numero<0){
 			multiplicacionNegativos *= numero;
 		}
 	}
-
 	document.getElementById("txtIdSuma").value = sumaPositivos;
 	document.getElementById("txtIdProducto").value = multiplicacionNegativos;
 }

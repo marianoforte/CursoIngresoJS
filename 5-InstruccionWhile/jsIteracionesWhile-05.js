@@ -6,17 +6,10 @@ function mostrar()
 	let sexoIngresado;
 	sexoIngresado = prompt("Ingrese su sexo, F o M.");
 
-	while(sexoIngresado == "f")
-	{
+	while(sexoIngresado == "f"){
 		document.getElementById("txtIdSexo").value = sexoIngresado;
-		break;
 	}
-	while(sexoIngresado == "m")
-	{
+	while(sexoIngresado == "m"){
 		document.getElementById("txtIdSexo").value = sexoIngresado;
-		break;
 	}
-	
-
-	
 }//FIN DE LA FUNCIÓN

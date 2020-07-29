@@ -13,7 +13,7 @@ hasta que el usuario quiera, mostrar:
 
 function mostrar() {
 
-	let array = [];
+  let array = [];
 	let numeros
 	let respuesta;
 
@@ -28,27 +28,22 @@ function mostrar() {
 
 	respuesta = "si";
 
-	while(respuesta != "no")
-{
+	while(respuesta != "no"){
   numeros = parseFloat(prompt("Ingrese un número"));
   respuesta = prompt("Desea continuar? Escriba 'si' para continuar, 'no' para salir");
 
-  if (numeros == 0)
-  {
+  if (numeros == 0){
   array[2]++;
   }
-  else if(numeros >=0)
-  {
+  else if(numeros >=0){
   array[0] = array[0] + numeros;
   array[4]++;
   }
-  else
-  {
+  else{
   array[1] = array[1] + numeros;
   array[5]++;
   }
-
-  if (numeros % 2 == 0) {
+  if (numeros % 2 == 0){
 	 array[3]++;
   }
 }   

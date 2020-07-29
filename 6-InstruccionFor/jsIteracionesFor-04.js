@@ -1,7 +1,9 @@
+let flag = 0;
+
 function mostrar()
-{
-	alert("ok");
-
-
-
-}//FIN DE LA FUNCIÓN
+{	
+	for(let repeticion=0;repeticion>=0;repeticion++){
+			alert("UTN FRA");
+			break;
+	}
+}

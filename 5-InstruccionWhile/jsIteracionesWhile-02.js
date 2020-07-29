@@ -6,10 +6,8 @@ function mostrar()
 	let contador
 	contador = 10
 
-	while(contador>0)
-	{
+	while(contador>0){
 		alert("Número: " + contador);
-		contador = contador--;
+		contador--;
 	}
-
 }//FIN DE LA FUNCIÓN
