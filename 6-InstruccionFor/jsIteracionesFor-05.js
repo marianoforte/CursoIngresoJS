@@ -1,9 +1,11 @@
 function mostrar()
 {
-	let numero = parseInt(prompt("Ingrese un número"));
-	
-	for(let contador=0; numero!=9;contador++){
-		numero = parseInt(prompt("Ingrese un número"));
+	let numero;
+	for( ; numero=9; ){
+		let numero = parseInt(prompt("Ingrese un número"));
+		if(numero==9){
+			continue;
+		}
+		alert("Usted ingresó el número: " + numero)
 	}
-
-}//FIN DE LA FUNCIÓN
+}

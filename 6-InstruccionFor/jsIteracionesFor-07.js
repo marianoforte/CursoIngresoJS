@@ -1,7 +1,24 @@
 function mostrar()
 {
 
-	alert("ok");
+	let numero;
+	let contadorDivisores = 0;
 
+	numero = parseInt(prompt("Ingrese un número"));
 
-}//FIN DE LA FUNCIÓN
+	while(isNaN(numero) || numero == 0){
+
+		num = prompt("Ingrese un número");
+		
+		}
+
+	for(let i=1; i<=numero; i++){
+		if(numero % i == 0){
+			contadorDivisores++;
+			console.log(i);
+		}
+	}
+
+	console.log("Divisores encontrados: " + contadorDivisores);
+
+}
