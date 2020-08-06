@@ -8,7 +8,7 @@ function mostrar()
 
 	while(isNaN(numero) || numero == 0){
 
-		num = prompt("Ingrese un número");
+		numero = prompt("Ingrese un número");
 		
 		}
 
